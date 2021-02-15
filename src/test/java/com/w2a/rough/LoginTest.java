@@ -31,7 +31,7 @@ public class LoginTest {
 		CreateAccountPage caPage=acPage.gotoCreateAccounts();
 		
      	caPage.createAccPage("Sushanth");
-		
+		System.out.println("ci");
 
 	}
 
