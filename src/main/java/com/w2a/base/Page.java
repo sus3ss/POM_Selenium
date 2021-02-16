@@ -36,7 +36,7 @@ public class Page {
 	public static Properties config = new Properties();
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
-	public static Logger log = Logger.getLogger("devpinoyLogger");
+	public static Logger log = Logger.getLogger("devpinoyLogger"); //Log4j
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
@@ -67,6 +67,7 @@ public class Page {
 			try {
 				config.load(fis);
 				log.debug("Config file loaded !!!");
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -110,6 +111,19 @@ public class Page {
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();
 				log.debug("Chrome Launched !!!");
+				// CHROME OPTIONS SETUP for DISABLING INFOBARS AND NOTIFICATIONS <SMALL POPUPS>
+
+				Map<String, Object> prefs = new HashMap<String, Object>();
+				prefs.put("profile.default_content_setting_values.notifications", 2);
+				prefs.put("credentials_enable_service", false);
+				prefs.put("profile.password_manager_enabled", false);
+				ChromeOptions options = new ChromeOptions();
+				options.setExperimentalOption("prefs", prefs);
+				options.addArguments("--disable-extensions");
+				options.addArguments("--disable-infobars");
+
+				driver = new ChromeDriver(options);
+				log.debug("Chrome Driver Options set");
 			} else if (config.getProperty("browser").equals("ie")) {
 
 				System.setProperty("webdriver.ie.driver",
@@ -117,18 +131,8 @@ public class Page {
 				driver = new InternetExplorerDriver();
 
 			}
-			// CHROME OPTIONS SETUP for DISABLING INFOBARS AND NOTIFICATIONS <SMALL POPUPS>
-
-			Map<String, Object> prefs = new HashMap<String, Object>();
-			prefs.put("profile.default_content_setting_values.notifications", 2);
-			prefs.put("credentials_enable_service", false);
-			prefs.put("profile.password_manager_enabled", false);
-			ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("prefs", prefs);
-			options.addArguments("--disable-extensions");
-			options.addArguments("--disable-infobars");
-
-			driver = new ChromeDriver(options);
+			
+			
 
 			driver.get(config.getProperty("testsiteurl"));
 			log.debug("Navigated to : " + config.getProperty("testsiteurl"));
