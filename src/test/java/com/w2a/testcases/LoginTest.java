@@ -11,7 +11,7 @@ import com.w2a.pages.crm.CRMHomePage;
 import com.w2a.utilities.Utilities;
 
 public class LoginTest {
-	//@Test
+	//@Testing
 	@Test(dataProviderClass = Utilities.class,dataProvider = "dp")
 	
 	public void loginTest(Hashtable<String, String> data) throws InterruptedException {
