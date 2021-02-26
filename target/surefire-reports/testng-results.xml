@@ -5,7 +5,7 @@
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Tue_Feb_16_10_39_44_IST_2021.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Feb_26_10_22_31_IST_2021.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,15 +14,15 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Tue_Feb_16_10_39_44_IST_2021.jpg><img src=Tue_Feb_16_10_39_44_IST_2021.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Feb_26_10_22_31_IST_2021.jpg><img src=Fri_Feb_26_10_22_31_IST_2021.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-02-16T05:09:22Z" name="POM_SELENIUM" finished-at="2021-02-16T05:09:44Z" duration-ms="22569">
+  <suite started-at="2021-02-26T04:52:10Z" name="POM_SELENIUM" finished-at="2021-02-26T04:52:31Z" duration-ms="21034">
     <groups>
     </groups>
-    <test started-at="2021-02-16T05:09:22Z" name="Zoho Login Test" finished-at="2021-02-16T05:09:31Z" duration-ms="9556">
+    <test started-at="2021-02-26T04:52:10Z" name="Zoho Login Test" finished-at="2021-02-26T04:52:19Z" duration-ms="9604">
       <class name="com.w2a.testcases.LoginTest">
-        <test-method signature="loginTest(java.util.Hashtable)[pri:0, instance:com.w2a.testcases.LoginTest@7df60067]" started-at="2021-02-16T10:39:22Z" name="loginTest" data-provider="dp" finished-at="2021-02-16T10:39:31Z" duration-ms="9306" status="PASS">
+        <test-method signature="loginTest(java.util.Hashtable)[pri:0, instance:com.w2a.testcases.LoginTest@7df60067]" started-at="2021-02-26T10:22:10Z" name="loginTest" data-provider="dp" finished-at="2021-02-26T10:22:19Z" duration-ms="9387" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,9 +35,9 @@
         </test-method> <!-- loginTest -->
       </class> <!-- com.w2a.testcases.LoginTest -->
     </test> <!-- Zoho Login Test -->
-    <test started-at="2021-02-16T05:09:32Z" name="Zoho Customer Account Test" finished-at="2021-02-16T05:09:44Z" duration-ms="12282">
+    <test started-at="2021-02-26T04:52:20Z" name="Zoho Customer Account Test" finished-at="2021-02-26T04:52:31Z" duration-ms="10535">
       <class name="com.w2a.testcases.CreateAccountTest">
-        <test-method signature="createAccountTest(java.util.Hashtable)[pri:0, instance:com.w2a.testcases.CreateAccountTest@4a7761b1]" started-at="2021-02-16T10:39:32Z" name="createAccountTest" data-provider="dp" finished-at="2021-02-16T10:39:44Z" duration-ms="11800" status="FAIL">
+        <test-method signature="createAccountTest(java.util.Hashtable)[pri:0, instance:com.w2a.testcases.CreateAccountTest@4a7761b1]" started-at="2021-02-26T10:22:20Z" name="createAccountTest" data-provider="dp" finished-at="2021-02-26T10:22:30Z" duration-ms="10161" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -45,24 +45,28 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <div class="app-nm">...</div> is not clickable at point (554, 422). Other element would receive the click: <div class="myapps cb icon-96 _logo-x96" id="zl-myapps">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'CRM')]"}
   (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BLR-LAP-015', ip: '10.102.240.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+System info: host: 'BLR-LAP-015', ip: '172.29.146.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SKADAI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3069441db6733f9af7dc474d89f5af62]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SKADAI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c6cf2afe532ad6969b79ee77c959b55
+*** Element info: {Using=xpath, value=//div[contains(text(),'CRM')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="app-nm">...</div> is not clickable at point (554, 422). Other element would receive the click: <div class="myapps cb icon-96 _logo-x96" id="zl-myapps">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'CRM')]"}
   (Session info: chrome=88.0.4324.150)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BLR-LAP-015', ip: '10.102.240.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+System info: host: 'BLR-LAP-015', ip: '172.29.146.137', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SKADAI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3069441db6733f9af7dc474d89f5af62
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SKADAI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c6cf2afe532ad6969b79ee77c959b55
+*** Element info: {Using=xpath, value=//div[contains(text(),'CRM')]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -73,9 +77,11 @@ Session ID: 3069441db6733f9af7dc474d89f5af62
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.w2a.base.Page.click(Page.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.w2a.base.Page.click(Page.java:156)
 	at com.w2a.pages.ZohoAppPage.gotoCRM(ZohoAppPage.java:13)
 	at com.w2a.testcases.CreateAccountTest.createAccountTest(CreateAccountTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -108,13 +114,13 @@ Session ID: 3069441db6733f9af7dc474d89f5af62
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Tue_Feb_16_10_39_44_IST_2021.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Feb_26_10_22_31_IST_2021.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -123,7 +129,7 @@ Session ID: 3069441db6733f9af7dc474d89f5af62
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Tue_Feb_16_10_39_44_IST_2021.jpg><img src=Tue_Feb_16_10_39_44_IST_2021.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Feb_26_10_22_31_IST_2021.jpg><img src=Fri_Feb_26_10_22_31_IST_2021.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- createAccountTest -->
